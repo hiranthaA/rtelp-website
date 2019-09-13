@@ -2525,13 +2525,13 @@ shortcodes page css
   margin-left: 15px;
 }
 
-*, *:before, *:after {
+/* *, *:before, *:after {
   box-sizing: inherit;
-}
+} */
 
 .columnx {
   float: left;
-  width: 23%;
+  width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
