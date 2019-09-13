@@ -2525,6 +2525,59 @@ shortcodes page css
   margin-left: 15px;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.columnx {
+  float: left;
+  width: 23%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .columnx {
+    width: 100%;
+    display: block;
+  }
+}
+
+.cardx {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerx {
+  padding: 0 16px;
+}
+
+.containerx::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.titlex {
+  color: grey;
+}
+
+.buttonx {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonx:hover {
+  background-color: #555;
+}
+
+
 
 
 
