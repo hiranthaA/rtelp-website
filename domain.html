@@ -116,8 +116,8 @@
 											<br>
 											<h4>Student Questioning and Whiteboard</h4>
 											<p align="justify">
-												The main objective of the SQHW component is to build up a way to handle the real time questioning facility with the ongoing lecture. Student can mainly ask questions using his webcam and microphone through video and audio medias. Rather student can use chat box to interact with lecturer with text and uploading files when necessary. 
-												The developed system is a web based application and SQHW component is focused with two main functions. 
+												The main objective of the this component is to build up a way to handle the real time questioning facility with the ongoing lecture. Student can mainly ask questions using his webcam and microphone through video and audio medias. Students can use chat box to interact with lecturer with text and uploading files when necessary. 
+												The developed system is a web based application and SQHW component is focused with two main functions. <br>
 												<br>1. Controlling the questioning function
 												<br>2. Whiteboard function <br>
 											</p>
@@ -221,6 +221,33 @@
 												detections in the same frame. Based on the similarity score algorithm will keep tracking 
 												the same person it tracked before. Both Siamese network and Yolo3 will be running on GPU to 
 												maximize the performance (FPS).</p>
+												<br>
+												<h4>Student Questioning with Whiteboard</h4>
+											<p align="justify">Main purpose of this component is to create live interaction with the lecturer and
+													the student.</p>		
+											<p align="justify">Whiteboard was implemented using vectors. So only the line coordinates will be
+													transferred among users and created a vector based whiteboard. When a line
+													draws, the coordinates of that drawing goes to the server. Then through the server
+													socket connection that line coordinates are streaming to the all users of the current
+													session. As this whiteboard is a light weight board run with vectors, small process
+													will be used not like video based whiteboards. And also lecturer and the student
+													both can use and draw with this whiteboard as a real time whiteboard. </p>	
+											<p align="justify">The chat module is implemented to allow chat with each other with in the same session. Whether students can ask questions from the lecturer using
+													chat or chat among other users is allowed. Users also can share images or pdf
+													documents among others using the chat window.</p>	
+											<p align="justify">There is a specific feature that allows lecturer to create polls. So
+													the poll will be displayed to students and they will be able to pick the preferred
+													answer. After the vote is done results will be analysis in the server according to
+													the poll id and lecturer will able to see the results in a graphical way. For the graph
+													drawings plotlyJS is used as a library. Finally, the vote graph can be shared among
+													students. So the students also able to see the results in graphical way.</p>
+											<p align="justify">Both whiteboard and the chat with live poll implemented using socket connection.
+													For publishers and listeners one socket is created each and will be adding the
+													necessary properties for the socket in server. Drawings in the whiteboard streams with minimum or no delay. Mostly it depends
+													with the internet connection, because socket has no or very low latency.
+													All these drawings and chats will be saved in a database for the usage of offline
+													playback.</p>	
+													<br>
 										</p>
 
                                      </div>
