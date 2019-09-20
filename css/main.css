@@ -374,25 +374,25 @@ input.search-form:hover {
 
 
 #playback{
-  margin-top: 11%;
+  /* margin-top: 11%; */
 }
 
 #livestreaming{
 
 }
 
-#tracking{margin-top: 42%;}
+/* #tracking{margin-top: 42%;} */
 
 #stdlecInt{
   
 }
 
 #main-slider .carousel .carousel-content {
-  /* margin-top: 150px; */
+  margin-top: 150px;
 }
 
 #main-slider .carousel .slide-margin{
-  /* margin-top: 140px; */
+  margin-top: 55px;
 }
 
 #main-slider .carousel h2 {
